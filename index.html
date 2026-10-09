@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Papa ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Background decorations -->
+    <div class="floating-hearts">
+        <span>❤️</span>
+        <span>💙</span>
+        <span>✨</span>
+        <span>❤️</span>
+        <span>⭐</span>
+        <span>💙</span>
+        <span>✨</span>
+    </div>
+
+
+    <!-- ================= PAGE 1 ================= -->
+
+    <section class="page active" id="page1">
+
+        <div class="balloons">
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+        </div>
+
+        <div class="welcome-card">
+
+            <div class="cake">🎂</div>
+
+            <p class="small-title">
+                A Special Day For A Special Person
+            </p>
+
+            <h1>
+                Happy Birthday
+                <br>
+                <span>Papa ❤️</span>
+            </h1>
+
+            <p class="intro">
+                Today isn't just another day...
+                <br>
+                It's the day the most wonderful person was born.
+            </p>
+
+            <button onclick="nextPage()">
+                Start The Celebration 🎁
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PAGE 2 ================= -->
+
+    <section class="page" id="page2">
+
+        <div class="message-card">
+
+            <div class="icon">💙</div>
+
+            <p class="small-title">
+                A Little Message From My Heart
+            </p>
+
+            <h2>
+                Dear Papa,
+            </h2>
+
+            <p class="message">
+                You have always been one of the strongest pillars
+                of my life. Your love, your sacrifices, your guidance,
+                and even your little scoldings have helped me become
+                the person I am today.
+            </p>
+
+            <p class="message">
+                There are so many things I may not say every day,
+                but I want you to know that I am truly grateful
+                to have you as my father.
+            </p>
+
+            <p class="message highlight">
+                Thank you for always being there for me. ❤️
+            </p>
+
+            <button onclick="nextPage()">
+                Continue ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PAGE 3 ================= -->
+
+    <section class="page" id="page3">
+
+        <div class="memories-container">
+
+            <p class="small-title">
+                Some Things I Treasure
+            </p>
+
+            <h2>
+                My Favorite Things About You 🌟
+            </h2>
+
+            <div class="memory-grid">
+
+                <div class="memory-card">
+                    <div class="memory-icon">🛡️</div>
+                    <h3>My Protector</h3>
+                    <p>
+                        You have always made me feel safe,
+                        no matter what happens.
+                    </p>
+                </div>
+
+                <div class="memory-card">
+                    <div class="memory-icon">🤝</div>
+                    <h3>My Support</h3>
+                    <p>
+                        You always encourage me to keep moving
+                        forward and believe in myself.
+                    </p>
+                </div>
+
+                <div class="memory-card">
+                    <div class="memory-icon">😊</div>
+                    <h3>My Happiness</h3>
+                    <p>
+                        Some of my happiest memories
+                        are the simple moments spent with you.
+                    </p>
+                </div>
+
+                <div class="memory-card">
+                    <div class="memory-icon">⭐</div>
+                    <h3>My Inspiration</h3>
+                    <p>
+                        Your hard work and dedication inspire
+                        me to become a better person every day.
+                    </p>
+                </div>
+
+            </div>
+
+            <p class="bottom-message">
+                I may not say it enough...
+                <br>
+                <strong>I love you and I am lucky to have you, Papa. ❤️</strong>
+            </p>
+
+            <button onclick="nextPage()">
+                One Last Surprise 🎬
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PAGE 4 ================= -->
+
+    <section class="page" id="page4">
+
+        <div class="video-container">
+
+            <div class="video-title">
+                <span>🎬</span>
+
+                <h2>
+                    A Little Surprise For You
+                </h2>
+
+                <p>
+                    Sit back, relax and enjoy this special memory ❤️
+                </p>
+            </div>
+
+
+            <div class="video-box">
+
+                <video
+                    id="birthdayVideo"
+                    controls
+                    playsinline
+                    preload="metadata">
+
+                    <source
+                        src="Screen_Recording_20261009_023759_Instagram_1.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support the video tag.
+
+                </video>
+
+            </div>
+
+
+            <div class="final-message">
+
+                <div class="final-emoji">
+                    🎂 ❤️ 🎉
+                </div>
+
+                <h1>
+                    Happy Birthday Papa!
+                </h1>
+
+                <p>
+                    May your life always be filled with happiness,
+                    good health, peace and countless beautiful moments.
+                </p>
+
+                <p class="forever">
+                    Thank you for being the best Papa. ❤️
+                </p>
+
+                <button onclick="restartWebsite()">
+                    Watch From Beginning 🔄
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Confetti container -->
+    <div id="confetti-container"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
